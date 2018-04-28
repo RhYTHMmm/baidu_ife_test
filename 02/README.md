@@ -102,6 +102,16 @@ npm install node-sass
 }
  ```
  ## 5. babel
+```
+cnpm i -D babel-preset-env 
+```
+```
+{
+  "presets": [
+      "env"
+  ]
+}
+```
  
  ## 6. SAN 
  [San gitgub](https://github.com/baidu/san/)
