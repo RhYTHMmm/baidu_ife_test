@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>parcel</title>
+    <link rel="stylesheet" href="./index.scss">
+    <script src="https://unpkg.com/san@latest"></script>
+</head>
+<body>
+    <!--<div class="app">-->
+        <!--hello world!! parcel-->
+    <!--</div>-->
+<!--<script src="./index.js"></script>-->
+    <script>
+      const MyApp = san.defineComponent({
+        template: `
+                <div>
+                    <input type="text" value="{=name=}">
+                    <p>Hello {{name}}!</p>
+                </div>
+            `
+      });
+
+      let myApp = new MyApp({
+        data: {
+          name: 'world'
+        }
+      });
+      myApp.attach(document.body);
+    </script>
+</body>
+</html>
