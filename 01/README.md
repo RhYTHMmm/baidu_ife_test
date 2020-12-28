@@ -9,3 +9,5 @@
 2. 2、再添加远程 Git 仓库
 > git remote add origin git@github.com:FBing/java-code-generator
 
+
+test 2020.12.28
